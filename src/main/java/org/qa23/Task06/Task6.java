@@ -3,20 +3,33 @@ package org.qa23.Task06;
 import java.util.Scanner;
 
 /*
-* Пользователь вводит с клавиатуры число.
-* Необходи- мо проверить его на четность
-* и нечетность. Если число четное требуется
-* вывести на экран число и надпись «Even number».
-*  Если число нечетное выведите на экран число и надпись «Odd number».
+* Задание 4
+Дана точка на плоскости заданная координатами x и y,
+определить и вывести в консоль, в какой четверти находит-
+ся точка, в прямоугольной (декартовой) системе координат.
+Четверти обозначены римскими цифрами.
 * */
 public class Task6 {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
-            int i = console.nextInt();
-            if (i%2 ==0) {
-                System.out.println("Event number");
-            } else {
-                System.out.println("Odd number");
-            }
+        System.out.println("Введите координату Х");
+        int x = console.nextInt();
+        System.out.println("Введите координату Y");
+        int y = console.nextInt();
+        if (x > 0 && y > 0) {
+            System.out.println("Точка находится в  І четверти");
+        } else if (x < 0 && y > 0) {
+            System.out.println("Точка находится в  ІI четверти");
+        } else if (x < 0 && y < 0) {
+            System.out.println("Точка находится в  ІII четверти");
+        } else if (x > 0 && y < 0) {
+            System.out.println("Точка находится в  ІV четверти");
+        } else if (x == 0 && y != 0) {
+            System.out.println("Точка находится на оси У");
+        } else if (x != 0 && y == 0) {
+            System.out.println("Точка находится на оси Х");
+        } else if (x == 0 && y == 0) {
+            System.out.println("Точка находится в  начале координат");
+        }
     }
 }

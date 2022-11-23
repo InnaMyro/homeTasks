@@ -15,11 +15,17 @@ import java.util.Scanner;
 public class Task5 {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
-        int i = console.nextInt();
-        if (i % 2 == 0) {
-            System.out.println("Event number");
+        System.out.println("Введите колличество часов");
+        int a = console.nextInt();
+        if (a >= 0 && a < 6) {
+            System.out.println("Good Night");
+        } else if (a >= 6 && a < 13) {
+            System.out.println("Good Morning");
+        } else if (a >= 13 && a < 17) {
+            System.out.println("Good Evening");
         } else {
-            System.out.println("Odd number");
+            System.out.println("Нечего тут тыкать");
         }
     }
+
 }
