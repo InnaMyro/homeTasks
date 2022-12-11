@@ -1,4 +1,4 @@
-package org.qa23.Task02;
+package org.qa23.part1.Task02;
 
 import java.util.Scanner;
 
