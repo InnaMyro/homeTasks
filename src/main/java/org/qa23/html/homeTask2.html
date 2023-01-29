@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<head>
+    <meta charset="UTF-8">
+    <title>My To Do list</title>
+    <style>
+        div {
+            position: center;
+            color: black;
+            font-size: 20px;
+            background-color: darkgrey;
+            padding: 20px;
+            width: 600px;
+        }
+
+        ul {
+            background-color: lightgrey;
+            padding: 20px;
+            list-style: none;
+        }
+
+        ul li {
+            padding-left: 10px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            height: 30px;
+            align-items: center;
+
+        }
+
+        li:nth-child(odd) {
+            background-color: blue;
+        }
+
+        li:nth-child(even) {
+            background-color: dodgerblue;
+        }
+
+        span {
+            width: 95%;
+        }
+
+        input:checked + span {
+            background-color: grey;
+            text-decoration: line-through;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<div>
+    <h1>My To Do List</h1>
+    <ul class="ol-list">
+        <li class="element"><label>
+            <input type="checkbox">
+            <span>wake up</span>
+        </label></li>
+        <li class="element"><label>
+            <input type="checkbox">
+            <span>cup of black-black coffee</span>
+
+        </label></li>
+        <li class="element"><label>
+            <input checked type="checkbox">
+            <span>get a taxi</span>
+        </label></li>
+        <li class="element"><label>
+            <input checked type="checkbox">
+            <span>go to work</span>
+        </label></li>
+        <li class="element"><label>
+            <input checked type="checkbox">
+            <span>come to home</span>
+        </label></li>
+        <li class="element"><label>
+            <input type="checkbox">
+            <span>have a dinner</span>
+        </label></li>
+        <li class="element"><label>
+            <input type="checkbox">
+            <span>go to bed</span>
+        </label></li>
+    </ul>
+</div>
+</body>
+</html>
