@@ -1,0 +1,10 @@
+1. Открыть веб-браузер и загрузить страницу select_practice.html.
+2. В первом выпадающем списке "Select one" необходимо выбрать
+   "Volvo" используя метод selectByIndex() класса Select
+3. Проверить наличие строки "value:volvo" в output элементе с id = out1
+4. Далее выбрать "Saab" используя метод selectByValue() класса Select
+5. Проверить наличие строки "value:saab" в output элементе с id = out1
+6. Далее выбрать "Mercedes" используя метод selectByVisibleText() класса Select
+7. Проверить наличие строки "value:mercedes" в output элементе с id = out1
+*8. Выбрать "Audi" используя любой метод класса Select
+*9. Проверить наличие строки "value:audio" в output элементе с id = out1
