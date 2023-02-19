@@ -13,7 +13,7 @@ public class Forms {
 
         WebDriverManager.chromedriver().setup();
         WebDriver webDriver = new ChromeDriver();
-        webDriver.get("file:///Users/xcx1805/work/comparus/homeTasks/src/main/java/org/qa23/automationQA/forms/hw5.html");
+        webDriver.get("E:\\INNA\\homeTasks_html\\src\\main\\java\\org\\qa23\\automationQA\\forms\\hw5.html");
 
         List<WebElement> inputs = webDriver.findElements(By.tagName("input"));
         WebElement javaElement = null;

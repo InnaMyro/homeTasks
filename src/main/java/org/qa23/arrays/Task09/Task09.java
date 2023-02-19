@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Task09 {
     public static void main(String[] args) {
-        Random random = new Random();
+        /*Random random = new Random();
         int[] arrays = new int[10];
         for (int i = 0; i < arrays.length; i++) {
             arrays[i] = random.nextInt(-100,100);
@@ -28,6 +28,6 @@ public class Task09 {
         }
         System.out.println("Сумма четных чисел = " + sumChetElement);
         System.out.println("Сумма не четных чисел = " + sumNeCheElement);
-        System.out.println("Сумма  чисел меньше 0 = " + sumNegativElement);
+        System.out.println("Сумма  чисел меньше 0 = " + sumNegativElement);*/
     }
 }

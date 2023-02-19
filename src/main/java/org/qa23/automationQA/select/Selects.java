@@ -14,7 +14,7 @@ public class Selects {
 
         WebDriverManager.chromedriver().setup();
         WebDriver webDriver = new ChromeDriver();
-        webDriver.get("file:///Users/xcx1805/work/comparus/homeTasks/src/main/java/org/qa23/automationQA/select/select_practice.html");
+        webDriver.get("E:\\INNA\\homeTasks_html\\src\\main\\java\\org\\qa23\\automationQA\\select\\select_practice.html");
         String[] expectedResults = new String[] {
                 "",
                 "value:volvo",

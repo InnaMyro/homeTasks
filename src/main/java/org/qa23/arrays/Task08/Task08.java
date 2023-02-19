@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Task08 {
     public static void main(String[] args) {
-        Random random = new Random();
+        /*Random random = new Random();
         int[] arrays = new int[50];
         for (int i = 0; i < arrays.length; i++) {
             arrays[i] = random.nextInt(-100,100);
@@ -37,6 +37,6 @@ public class Task08 {
         System.out.println("Количество елементов больше 0 = " + countPositiveElement);
         System.out.println("Количество елементов меньше 0 = " + countNegativeElement);
         System.out.println("Максимальные элемент = " + max);
-        System.out.println("Минимальный елемент  = " + min);
+        System.out.println("Минимальный елемент  = " + min);*/
     }
 }

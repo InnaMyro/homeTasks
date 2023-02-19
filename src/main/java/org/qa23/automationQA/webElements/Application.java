@@ -6,7 +6,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Application {
     public static void main(String[] args) throws InterruptedException {
@@ -19,13 +21,16 @@ public class Application {
         };
         WebDriverManager.chromedriver().setup();
         WebDriver webDriver = new ChromeDriver();
-        webDriver.get("Users/xcx1805/work/comparus/homeTasks/src/main/java/org/qa23/automationQA/webElements/automation-practice-table.html");
+        webDriver.get("E:\\INNA\\homeTasks_html\\src\\main\\java\\org\\qa23\\automationQA\\webElements\\automation-practice-table.html");
 
         List<WebElement> allLinksInTable= webDriver.findElements(By.tagName("a"));
+        List<String> allhref = new ArrayList<>();
         for (int i = 0; i < allLinksInTable.size(); i++) {
-            allLinksInTable.get(i).click();
-            Thread.sleep(2000);
-            String currentUrl = webDriver.getCurrentUrl();
+            allhref.add(allLinksInTable.get(i).getAttribute("href"));
+        }
+        for (int i = 0; i < allhref.size(); i++) {
+            webDriver.navigate().to(allhref.get(i));
+            Thread.sleep(1000);
             String title = webDriver.getTitle();
             if (allLinksInTable.size() == checkedTitle.length) {
                 if (checkedTitle[i].equals(title)) {

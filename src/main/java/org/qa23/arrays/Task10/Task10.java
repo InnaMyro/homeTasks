@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class Task10 {
     public static void main(String[] args) {
-        Random random = new Random();
+        /*Random random = new Random();
         int[] arrays = new int[50];
         for (int i = 0; i < arrays.length; i++) {
             arrays[i] = random.nextInt(-100, 100);
@@ -66,6 +66,6 @@ public class Task10 {
         for (int i = 0; i < negative.length; i++) {
             System.out.print(negative[i] + " ");
         }
-
+*/
     }
 }

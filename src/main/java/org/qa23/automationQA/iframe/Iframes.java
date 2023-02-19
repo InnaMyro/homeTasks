@@ -16,7 +16,7 @@ public class Iframes {
         WebDriverManager chromedriver = WebDriverManager.chromedriver();
         WebDriver webDriver = new ChromeDriver();
         chromedriver.setup();
-        webDriver.manage().timeouts().pageLoadTimeout(6, TimeUnit.SECONDS);
+        webDriver.manage().timeouts().pageLoadTimeout(4, TimeUnit.SECONDS);
         try {
             webDriver.get("https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_iframe");
         } catch (Exception e) {
@@ -32,7 +32,7 @@ public class Iframes {
 
             }
         }
-        webDriver.get("file:///Users/xcx1805/work/comparus/homeTasks/src/main/java/org/qa23/automationQA/iframe/alert.html");
+        webDriver.get("E:\\INNA\\homeTasks_html\\src\\main\\java\\org\\qa23\\automationQA\\iframe\\alert.html");
         WebElement alert = webDriver.findElement(By.id("alert"));
         if (alert != null) {
             WebElement button = alert.findElement(By.tagName("button"));
