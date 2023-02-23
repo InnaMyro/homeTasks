@@ -16,7 +16,7 @@ public class WindowsException {
         WebDriver webDriver = new ChromeDriver();
         chromedriver.setup();
 
-        webDriver.get("file:///Users/xcx1805/work/comparus/homeTasks/src/main/java/org/qa23/automationQA/windowsExceptions/windows.html");
+        webDriver.get("E:\\INNA\\homeTasks_html\\src\\main\\java\\org\\qa23\\automationQA\\windowsExceptions\\windows.html");
         String windowHandle = webDriver.getWindowHandle();
         clickNewTab(webDriver);
         webDriver.switchTo().window(webDriver.getWindowHandle());

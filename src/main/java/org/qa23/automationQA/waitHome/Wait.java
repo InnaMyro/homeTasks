@@ -20,7 +20,7 @@ public class Wait {
         WebDriver webDriver = new ChromeDriver();
         chromedriver.setup();
 
-        webDriver.get("file:///Users/xcx1805/work/comparus/homeTasks/src/main/java/org/qa23/automationQA/waitHome/waits.html");
+        webDriver.get("E:\\INNA\\homeTasks_html\\src\\main\\java\\org\\qa23\\automationQA\\waitHome\\waits.html");
         new WebDriverWait(webDriver, Duration.ofSeconds(20)).until(webDriver1 -> webDriver1.switchTo().alert()).accept();
         WebElement body = new WebDriverWait(webDriver, Duration.ofSeconds(100)).until(webDriver1 -> webDriver1.findElement(By.className("blue")));
         if (Objects.nonNull(body) && body.getAttribute("class").equals("blue")) {
